@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Testing
+</title>
+<script type="text/javascript">
+function rock(){
+	var user= prompt("Write your name:-","Enter your Name.");
+	if(user){
+	alert("It's good to see u," + user );
+	document.getElementById("rockimg").src= "rock_happy.png";
+	}
+if(user!="naveen"){
+alert("User is " + user );
+document.getElementById("rockimg").src= "rock_sad.png";
+	}
+}
+</script>
+</head>
+<body onload="alert('Hello');">
+<div style=" text-align:center;">
+
+<h2>Welcome to iRock </h2>
+<p>this is just the version of irock</p>
+<img id= "rockimg" src="rock.png" alt="rock" style="cursor:pointer" onclick="rock();" />
+</div>
+</body>
+
+</html>
